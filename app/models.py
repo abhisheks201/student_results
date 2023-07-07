@@ -9,7 +9,7 @@ class User(models.Model):
     
     first_name = models.CharField(max_length=250)
     last_name = models.CharField(max_length=250)
-    hall_ticket = models.CharField(max_length=10, unique=True)
+    hall_ticket = models.IntegerField()
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     school = models.CharField(max_length=250)
     password = models.CharField(max_length=100)
